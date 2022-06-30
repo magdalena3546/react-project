@@ -3,12 +3,13 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { searchValue } from '../../redux/store';
 const SearchForm = props => {
   const [value, setValue] = useState('');
   const dispatch = useDispatch()
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch({ type: 'SEARCH_VALUE', payload: value  });
+    dispatch(searchValue(value));
     setValue('');
   };
   return ( 
