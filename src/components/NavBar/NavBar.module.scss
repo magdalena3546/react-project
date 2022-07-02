@@ -1,0 +1,33 @@
+@import '../../styles/settings.scss';
+
+.nav {
+  background-color: darken($color-dark, 3%);
+
+  .list {
+    list-style: none;
+    display: flex;
+  }
+
+  .elm {
+    margin-left: 8%;
+
+    .link {
+      color: $color-light;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .icon {
+    color: $color-light;
+    font-size: 24px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
