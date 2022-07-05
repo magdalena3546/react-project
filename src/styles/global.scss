@@ -20,4 +20,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: $color-light;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
 @import "./typography.scss";
