@@ -12,10 +12,15 @@
     font-weight: bold;
     .elm{
         list-style: none;
+        flex-grow: 2;
     }
     .button {
         background-color: #fff;
         border: none;
+        color: lighten($color-dark, 60%);
+        &:hover:last-child{
+            color: $color-dark;
+        }
     }
     .isFavorite {
         color: $color-warning;

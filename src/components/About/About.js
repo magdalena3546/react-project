@@ -12,5 +12,4 @@ const About = props => {
   </Container>
   )
 };
-
 export default About;
